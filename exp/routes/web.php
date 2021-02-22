@@ -22,6 +22,3 @@ Route::get('/info', function () {
 Route::get('/name', function () {
     return redirect('info');
 });
-Route::get('/myName/{id?}/{phone?}', function ($id=0, $phone=0) {
-    return "Phone number is ".$phone." and id is ".$id;
-});
